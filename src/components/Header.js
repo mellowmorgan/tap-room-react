@@ -2,7 +2,9 @@ import React from 'react';
 
 function Header() {
   return (
-    <h1>Welcome to the Keg Store</h1>
+    <React.Fragment>
+    <div className="header one-edge-shadow"><h1>Welcome to the Keg Store</h1></div>
+    </React.Fragment>
   );
 }
 

@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.one-edge-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+.header{
+  padding:2rem;
+  color:white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing:3px;
+  background-color: rgb(52, 52, 52);
+}
+.header h1 {
+  margin: 0;
+}
