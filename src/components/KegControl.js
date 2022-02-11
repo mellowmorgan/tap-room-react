@@ -18,7 +18,16 @@ class KegControl extends React.Component {
       formVisibleOnPage: !prevState.formVisibleOnPage,
     }));
   }
-  
+  handleSoldClicked = (id) =>
+  {
+    let changedKeg = this.state.mainKegList.filter(keg => keg.id === id)[0];
+    if (changedKeg.pintCount !== 0){
+      changedKeg.pintCount -= 1;
+      const changedMainKegList = this.state.mainKegList.filter(keg => keg.id !== id).concat(changedKeg);
+      this.setState({
+        mainKegist: changedMainKegList})
+    }
+  }
 
   handleAddingNewKegToList = (newKeg) =>
   {
@@ -26,6 +35,7 @@ class KegControl extends React.Component {
     this.setState({mainKegList: newMainKegList,
                   formVisibleOnPage: false});
   }  
+
   render(){
     let currentlyVisibleState = null;
     let buttonText = null; 
@@ -34,7 +44,7 @@ class KegControl extends React.Component {
       buttonText = "Return to Keg List"; 
 
     }else{
-      currentlyVisibleState = <KegList list={this.state.mainKegList}/>
+      currentlyVisibleState = <KegList onSoldClicked={this.handleSoldClicked} list={this.state.mainKegList}/>
       buttonText = "Add Keg"
     }
     

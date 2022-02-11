@@ -11,7 +11,7 @@ function NewKegForm(props) {
       brand: event.target.brand.value,
       price: event.target.price.value,
       alcoholContent: event.target.alcohol.value,
-      kegCounter: 124,
+      pintCount: 124,
       id: v4()
     });
   }
