@@ -1,7 +1,32 @@
-# Getting Started with Create React App
+# Tap Room React App
+
+## By: Morgan Waites
+
+#### A react app that displays kegs with full CRUD functionality.
+
+![tap diagram](./src/img/tapDiagram.png)
+
+## Technologies Used
+
+* _React library_
+* _Javascript_
+* _Node_
+* _Webpack_
+* _Babel_
+
+## Description
+
+Tap room app shows list of kegs available at the tap room. Users can add, view, update and delete kegs and decrement pint count with a pint sold button.
+
+## Setup Instructions
+
+* Clone this repository to desired directory on computer
+* Navigate into directory of project created
+* npm install
+* npm run start and go to localhost:3000 in browser to view app.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-![tap diagram](./src/img/tapDiagram.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -68,3 +93,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT) Copyright (c) 2022 Morgan Waites
