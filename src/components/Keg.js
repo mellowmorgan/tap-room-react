@@ -1,18 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import Card from 'react-bootstrap/Card';
 function Keg(props) {
 
   return (
     <React.Fragment>
-      <div onClick = {() => props.whenKegClicked(props.id)}>
-        <h3>Name: {props.name}</h3>
+      <Card className="card-style"><div onClick = {() => props.whenKegClicked(props.id)}>
+        <h4>{props.name}</h4>
         <p>Brand: {props.brand}</p>
         <p>Price: {props.price}</p>
         <p>Alcohol: {props.alcoholContent}</p>
         <p>Pints: {props.pintCount}</p>
       </div>
-      <button onClick={()=> props.whenSoldClicked(props.id)}>Pint Sold</button>
+      <div className="button-holder"><button className="button-gray" onClick={()=> props.whenSoldClicked(props.id)}>Pint Sold</button></div></Card>
+
+      
     </React.Fragment>
   );
 }

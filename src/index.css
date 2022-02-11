@@ -99,3 +99,83 @@ h4{
   background-size: cover;
   height:350px;
 }
+.carousel-holder{
+  background-color: rgb(52, 52, 52);
+  margin:2rem;
+  height:200px;
+}
+.carousel-item{
+  min-height: 180px;
+}
+.card-style{
+  width:320px;
+  padding:2.5rem;
+
+}
+.space-main{
+  margin:2rem;
+}
+.grid-container {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.button-holder{
+  margin-top:1rem;
+  text-align:center;
+}
+.button-gray {
+  
+  align-items: center;
+  background-clip: padding-box;
+  background-color: rgb(188, 188, 188);
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 160px;
+}
+
+.button-gray:hover,
+.button-gray:focus {
+  background-color: rgb(171, 171, 171);
+  box-shadow:rgb(205, 205, 205);
+}
+
+.button-gray:hover {
+  transform: translateY(-1px);
+}
+
+.button-gray:active {
+  background-color: rgb(126, 126, 126);
+  box-shadow: rgba(144, 144, 144, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}

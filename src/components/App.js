@@ -5,7 +5,7 @@ function App() {
   return (
     <React.Fragment>
       <Header />
-      <KegControl/>
+      <div className="space-main"><KegControl/></div>
     </React.Fragment>
   );
 }
