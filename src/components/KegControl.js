@@ -103,10 +103,11 @@ class KegControl extends React.Component {
 
     return ( 
     <React.Fragment>
-    
+    <div className="holder-center">   <button className="button-5" onClick={this.handleClick}>{buttonText}</button> </div>
+  
       {currentlyVisibleState}
       
-      <button className="button-5" onClick={this.handleClick}>{buttonText}</button> { /* new code */ }
+     
     </React.Fragment>
   );
 }

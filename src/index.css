@@ -18,7 +18,7 @@ code {
 	        box-shadow: 0 8px 6px -6px black;
 }
 .header{
-  padding:2rem;
+  padding:1.75rem;
   color:white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
@@ -27,6 +27,7 @@ code {
 }
 .header h1 {
   margin: 0;
+  font-size:2rem;
 }
 
 .button-5 {
@@ -75,4 +76,26 @@ code {
   background-color: #c85000;
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
+}
+h4{
+  margin-bottom:1.75rem !important; 
+}
+.form-holder{
+  margin: 4rem auto;
+  width:350px;
+}
+.form-input{
+  min-height: 3rem;
+  margin-bottom:1rem;
+ 
+}
+.holder-center{
+  text-align:center;
+  margin:3rem;
+}
+.header-img{
+  background: url(./img/tapRoom.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:350px;
 }

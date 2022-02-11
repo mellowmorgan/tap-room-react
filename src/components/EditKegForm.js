@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import Form from 'react-bootstrap/Form';
 function EditKegForm(props) {
   const { keg } = props;
 
@@ -18,29 +18,34 @@ function EditKegForm(props) {
 
   return(
     <React.Fragment>
-        <form onSubmit={handleEditKegFormSubmission}>
-        <input
+      <div className="form-holder">
+      <h4>Update Keg</h4> 
+        <Form onSubmit={handleEditKegFormSubmission}>
+         <Form.Group className="mb-3"> 
+         <Form.Control className="form-input"
           type='text'
           name='name'
           placeholder='Name of keg' />
-        <input
+      <Form.Control className="form-input"
           type='text'
           name='brand'
           placeholder='Brand' />
-        <input
+        <Form.Control className="form-input"
           type='text'
           name='price'
           placeholder='Price' />
-        <input
+        <Form.Control className="form-input"
           type='text'
           name='alcohol'
           placeholder='Alcohol content' />
-        <input
+        <Form.Control className="form-input"
           type='hidden'
           value={props.keg.pintCount}
           name='pintCount' />
-        <button type='submit'>Update</button>
-      </form>
+        <button className="button-5" type='submit'>Update</button>
+        </Form.Group>
+      </Form>
+      </div>
     </React.Fragment>
   );
 }
