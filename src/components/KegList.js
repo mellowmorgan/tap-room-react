@@ -1,8 +1,15 @@
 import React from 'react';
-
+import Keg from './Keg'
 function KegList() {
   return (
-    <h1>this is where the list will be</h1>
+    <React.Fragment>
+      {props.list.map((keg)=>
+        <div>
+          <Keg name={keg.name} brand={keg.brand} 
+          price={keg.price} alcoholContent = {keg.alcoholContent} />
+        </div>
+      )}
+    </React.Fragment>
   );
 }
 
