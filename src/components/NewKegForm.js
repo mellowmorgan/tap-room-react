@@ -1,8 +1,7 @@
 import React from "react";
 import { v4 } from "uuid";
 import PropTypes from "prop-types";
-import ReusableForm from "./ReusableForm"
-
+import Form from 'react-bootstrap/Form';
 function NewKegForm(props) {
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
@@ -17,26 +16,29 @@ function NewKegForm(props) {
   }
   return(
     <React.Fragment>
-
-         <form onSubmit={handleNewKegFormSubmission}>
-         <input
+     <div className="form-holder">
+         <Form onSubmit={handleNewKegFormSubmission}>
+         <Form.Group className="mb-3">
+         <Form.Control 
            type='text'
            name='name'
            placeholder='Name of keg' />
-         <input
+          <Form.Control 
            type='text'
            name='brand'
            placeholder='Brand' />
-         <input
+          <Form.Control 
            type='text'
            name='price'
            placeholder='Price' />
-         <input
+          <Form.Control 
            type='text'
            name='alcohol'
            placeholder='Alcohol content' />
-         <button type='submit'>Add Keg</button>
-       </form>
+         <button className="button-5" type='submit'>Add Keg</button>
+         </Form.Group>
+         </Form>
+         </div>
     </React.Fragment>
   );
 
