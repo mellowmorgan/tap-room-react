@@ -1,7 +1,8 @@
 import React from 'react';
 import Keg from './Keg';
 import PropTypes from "prop-types";
-function KegList() {
+
+function KegList(props) {
   return (
     <React.Fragment>
       {props.list.map((keg)=>
@@ -9,11 +10,11 @@ function KegList() {
           price={keg.price} alcoholContent = {keg.alcoholContent} />
       )}
     </React.Fragment>
-  );
+  )
 }
 
 Keg.propTypes = {
-  list = PropTypes.string
+  list: PropTypes.string
 }
 
 export default KegList;

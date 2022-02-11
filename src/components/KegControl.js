@@ -19,7 +19,7 @@ class KegControl extends React.Component {
   render(){
     let currentlyVisibleState = null;
     let buttonText = null; 
-    currentlyVisibleState = <KegList />
+    currentlyVisibleState = <KegList list={this.state.mainKegList}/>
     buttonText = "Add Keg"
 
     return ( 
