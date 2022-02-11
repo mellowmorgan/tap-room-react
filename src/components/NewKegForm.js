@@ -17,9 +17,26 @@ function NewKegForm(props) {
   }
   return(
     <React.Fragment>
-      <ReusableForm
-        formSubmissionHandler={handleNewKegFormSubmission}
-        buttonText="Add Keg" />
+
+         <form onSubmit={handleNewKegFormSubmission}>
+         <input
+           type='text'
+           name='name'
+           placeholder='Name of keg' />
+         <input
+           type='text'
+           name='brand'
+           placeholder='Brand' />
+         <input
+           type='text'
+           name='price'
+           placeholder='Price' />
+         <input
+           type='text'
+           name='alcohol'
+           placeholder='Alcohol content' />
+         <button type='submit'>Add Keg</button>
+       </form>
     </React.Fragment>
   );
 

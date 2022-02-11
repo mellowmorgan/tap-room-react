@@ -11,8 +11,8 @@ function Keg(props) {
         <p>Price: {props.price}</p>
         <p>Alcohol: {props.alcoholContent}</p>
         <p>Pints: {props.pintCount}</p>
-        <button onClick={()=> props.whenSoldClicked(props.id)}>Pint Sold</button>
       </div>
+      <button onClick={()=> props.whenSoldClicked(props.id)}>Pint Sold</button>
     </React.Fragment>
   );
 }
