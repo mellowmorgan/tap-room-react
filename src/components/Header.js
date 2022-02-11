@@ -1,9 +1,9 @@
 import React from 'react';
 
-function App() {
+function Header() {
   return (
     <h1>Welcome to the Keg Store</h1>
   );
 }
 
-export default App;
+export default Header;
