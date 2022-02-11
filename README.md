@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-![tap diagram](./src/img/tapDiagram.drawio.png)
+![tap diagram](./src/img/tapDiagram.png)
 ## Available Scripts
 
 In the project directory, you can run:
