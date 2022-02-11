@@ -11,8 +11,9 @@
 * _React library_
 * _Javascript_
 * _Node_
-* _Webpack_
 * _Babel_
+* _HTML/CSS_
+* _Bootstrap_
 
 ## Description
 
