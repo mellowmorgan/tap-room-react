@@ -19,32 +19,32 @@ function EditKegForm(props) {
   return(
     <React.Fragment>
       <div className="form-holder">
-      <h4>Update Keg</h4> 
+        <h4>Update Keg</h4> 
         <Form onSubmit={handleEditKegFormSubmission}>
-         <Form.Group className="mb-3"> 
-         <Form.Control className="form-input"
-          type='text'
-          name='name'
-          placeholder='Name of keg' />
-      <Form.Control className="form-input"
-          type='text'
-          name='brand'
-          placeholder='Brand' />
-        <Form.Control className="form-input"
-          type='text'
-          name='price'
-          placeholder='Price' />
-        <Form.Control className="form-input"
-          type='text'
-          name='alcohol'
-          placeholder='Alcohol content' />
-        <Form.Control className="form-input"
-          type='hidden'
-          value={props.keg.pintCount}
-          name='pintCount' />
-        <button className="button-5" type='submit'>Update</button>
-        </Form.Group>
-      </Form>
+          <Form.Group className="mb-3"> 
+            <Form.Control className="form-input"
+              type='text'
+              name='name'
+              placeholder='Name of keg' />
+            <Form.Control className="form-input"
+              type='text'
+              name='brand'
+              placeholder='Brand' />
+            <Form.Control className="form-input"
+              type='text'
+              name='price'
+              placeholder='Price' />
+            <Form.Control className="form-input"
+              type='text'
+              name='alcohol'
+              placeholder='Alcohol content' />
+            <Form.Control className="form-input"
+              type='hidden'
+              value={props.keg.pintCount}
+              name='pintCount' />
+            <button className="button-5" type='submit'>Update</button>
+          </Form.Group>
+        </Form>
       </div>
     </React.Fragment>
   );

@@ -6,14 +6,23 @@ const {keg} = props;
 
   return(
     <React.Fragment>
-      <h3>Name: { keg.name}</h3>
-      <h4>Brand: {keg.brand}</h4>
-      <h4>Price: {keg.price}</h4>
-      <h4>Alcohol content: {keg.alcoholContent}</h4>
-      <h4>Pints: {keg.pintCount}</h4>
-      <hr />
-      <button onClick={ props.onClickingEdit }>Update</button>
-      <button onClick={()=>props.onClickingDelete(keg.id)}>Delete</button>
+      <div style={{marginLeft:'auto',marginRight:'auto',width:'50%'}}>
+        <div className="content-detail">
+          <h3>Name: { keg.name}</h3>
+          <h4>Brand: {keg.brand}</h4>
+          <h4>Price: {keg.price}</h4>
+          <h4>Alcohol content: {keg.alcoholContent}</h4>
+          <h4>Pints: {keg.pintCount}</h4>
+        </div>
+     
+        <hr />
+        <div className="detail-btn-space">
+          <button className="button-gray" onClick={ props.onClickingEdit }>Update</button>
+  
+          <button className="button-gray" onClick={()=>props.onClickingDelete(keg.id)}>Delete</button>
+        </div>
+      </div>
+      
     </React.Fragment>
 
   );
