@@ -8,7 +8,7 @@ const {keg} = props;
     <React.Fragment>
       <div style={{marginLeft:'auto',marginRight:'auto',width:'50%'}}>
         <div className="content-detail">
-          <h3>Name: { keg.name}</h3>
+          <h4>Name: { keg.name}</h4>
           <h4>Brand: {keg.brand}</h4>
           <h4>Price: {keg.price}</h4>
           <h4>Alcohol content: {keg.alcoholContent}</h4>

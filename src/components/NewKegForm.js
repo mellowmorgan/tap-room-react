@@ -42,8 +42,6 @@ function NewKegForm(props) {
       </div>
     </React.Fragment>
   );
-
- 
 }
 
 NewKegForm.propTypes = {
