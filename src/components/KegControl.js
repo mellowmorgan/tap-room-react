@@ -26,9 +26,10 @@ class KegControl extends React.Component {
       this.setState(prevState => ({
         formVisibleOnPage: !prevState.formVisibleOnPage,
       }));
+      }
     }
     
-  }
+  
   handleSoldClicked = (id) =>
   {
     let changedKeg = this.state.mainKegList.filter(keg => keg.id === id)[0];
@@ -106,7 +107,6 @@ class KegControl extends React.Component {
         <div className="holder-center">   <button className="button-5" onClick={this.handleClick}>{buttonText}</button> </div>
 
         {currentlyVisibleState}
-         
       </React.Fragment>
     );
   }

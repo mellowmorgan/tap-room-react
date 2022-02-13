@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { v4 } from "uuid";
 import PropTypes from "prop-types";
 import Form from 'react-bootstrap/Form';
+
 function NewKegForm(props) {
+  const myRef = useRef(null)
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
     props.onNewKegCreation({
@@ -13,10 +15,14 @@ function NewKegForm(props) {
       pintCount: 124,
       id: v4()
     });
-  }
+  } 
+  useEffect(()=>{
+    window.scrollTo(0, myRef.current.offsetTop)
+  });
   return(
+
     <React.Fragment>
-      <div className="form-holder">
+      <div ref={myRef} className="form-holder">
         <h4>Add A Keg</h4> 
         <Form onSubmit={handleNewKegFormSubmission}>
           <Form.Group className="mb-3">
